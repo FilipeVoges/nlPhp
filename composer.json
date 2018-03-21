@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "nlPhp\\" : "src/nlPhp/"
+        },
+        "files": [
+            "lib/helpers/helpers.php"
+        ]
+    }
+}
