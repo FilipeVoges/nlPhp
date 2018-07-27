@@ -8,7 +8,7 @@ namespace nlPhp\Exception;
  * @author Filipe Voges <filipe.voges@vapps.com.br>
  * @since 2018-07-23
  * @package nlPhp\Exception
- * @version 1.0
+ * @version 0.1
  */
 class nlPhpException extends \Exception {
 

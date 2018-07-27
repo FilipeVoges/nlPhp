@@ -8,7 +8,7 @@ namespace nlPhp\Entity;
  * @author Filipe Voges <filipe.voges@vapps.com.br>
  * @since 2018
  * @package nlPhp\Entity
- * @version 1.0
+ * @version 0.1
  */
 abstract class Entity {
 
