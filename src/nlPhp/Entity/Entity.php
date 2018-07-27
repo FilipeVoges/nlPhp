@@ -1,13 +1,13 @@
 <?php
 
-namespace nlPhp\Entities;
+namespace nlPhp\Entity;
 
 /**
  * \Entity
  *
  * @author Filipe Voges <filipe.voges@vapps.com.br>
  * @since 2018
- * @package nlPhp\Entities
+ * @package nlPhp\Entity
  * @version 1.0
  */
 abstract class Entity {

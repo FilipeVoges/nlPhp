@@ -2,7 +2,7 @@
 
 namespace nlPhp\Interfaces;
 
-use nlPhp\Entities\Intetion;
+use nlPhp\Entity\Intetion;
 
 /**
  * \Application

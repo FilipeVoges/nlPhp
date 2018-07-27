@@ -3,8 +3,8 @@
 namespace nlPhp;
 
 use nlPhp\Interfaces\Application;
-use nlPhp\Entities\Question;
-use nlPhp\Entities\Intetion;
+use nlPhp\Entity\Question;
+use nlPhp\Entity\Intetion;
 
 /**
  * \nlPhp
@@ -17,11 +17,6 @@ use nlPhp\Entities\Intetion;
  * @version 1.0
  */
 class nlPhp implements Application {
-
-    /**
-     * @var String
-     */
-    private static $filePath = __DIR__ . '/../../data/learned.json';
 
     /**
      * @var \Stdclass
@@ -42,12 +37,6 @@ class nlPhp implements Application {
      * Construct Class
      */
     public function __construct(){
-        if(file_exists(self::$filePath)){
-            $this->words = readJson(self::$filePath);
-        }else{
-            saveJson(self::$filePath, array());
-            $this->words = readJson(self::$filePath);
-        }
     }
 
     /**

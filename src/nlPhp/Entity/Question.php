@@ -1,13 +1,15 @@
 <?php
 
-namespace nlPhp\Entities;
+namespace nlPhp\Entity;
+
+use nlPhp\Exception\nlPhpException;
 
 /**
  * \Question
  *
  * @author Filipe Voges <filipe.voges@vapps.com.br>
  * @since 2018
- * @package nlPhp\Entities
+ * @package nlPhp\Entity
  * @version 1.0
  */
 class Question extends Entity {
@@ -28,9 +30,23 @@ class Question extends Entity {
      * @param $question String
      */
     public function __construct($question){
-        $this->question = $question;
+        if(!is_string($question)){
+            throw new nlPhpException('You must enter a String.');
+        }
 
+        $this->question = $question;
         $this->terms = explode(' ', $this->question);
+
+        $this->process();
+    }
+
+    /**
+     * Process the question
+     *
+     * @return Void
+     */
+    private function process() : Void {
+        debug($this->question);
         debug($this->terms, true);
     }
 }
